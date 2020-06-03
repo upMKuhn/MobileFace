@@ -3,10 +3,6 @@
 
 from setuptools import setup
 
-with open('../README.md') as readme_file:
-   readme = readme_file.read()
-
-
 requirements = [
     'mxnet',
     'gluoncv',
@@ -21,14 +17,14 @@ setup(
     name='mobileface_detection',
     version='1.3.0',
     description="Recognize faces from Python or from the command line",
-    long_description=readme + '\n\n',
     author="becauseOfAi",
     author_email='noemail@gmail.com',
     url='https://github.com/becauseofAI/MobileFace/blob/master/MobileFace_Detection/mobilefacedetnet.py',
     packages=[
     ],
+    package_dir={'MobileFace_Detection': ''},
     package_data={
-        '': ['model/*.*']
+        'MobileFace_Detection': ['model/*.*']
     },
     install_requires=requirements,
     license="MIT license",
