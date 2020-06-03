@@ -26,11 +26,9 @@ setup(
     author_email='noemail@gmail.com',
     url='https://github.com/becauseofAI/MobileFace/blob/master/MobileFace_Detection/mobilefacedetnet.py',
     packages=[
-        'mobileface_detection',
     ],
-    package_dir={'': 'mobileface_detection'},
     package_data={
-        'mobileface_detection': ['model/*.*']
+        '': ['model/*.*']
     },
     install_requires=requirements,
     license="MIT license",
