@@ -10,7 +10,6 @@ with open('../README.md') as readme_file:
 requirements = [
     'mxnet',
     'gluoncv',
-    'Click>=6.0',
     'dlib>=19.7',
     'numpy',
 ]
@@ -29,7 +28,7 @@ setup(
     packages=[
         'mobileface_detection',
     ],
-    package_dir={'mobileface_detection': 'mobileface_detection'},
+    package_dir={'': 'mobileface_detection'},
     package_data={
         'mobileface_detection': ['model/*.*']
     },
