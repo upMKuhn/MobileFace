@@ -7,7 +7,7 @@ import mxnet as mx
 from mxnet import gluon
 from mxnet.gluon import nn
 from mxnet.gluon.nn import BatchNorm
-from utils.yolo3 import YOLOV3
+from .utils.yolo3 import YOLOV3
 
 __all__ = ['MFDetV1', 'get_mfdet', 'mfdet']
 

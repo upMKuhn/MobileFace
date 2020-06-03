@@ -1,3 +1,4 @@
 # from __future__ import absolute_import
 from . import utils
-from . import mobilefacedet
+from . import mobileface_detector
+from . import mobilefacedetnet

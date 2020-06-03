@@ -3,14 +3,9 @@
 
 from setuptools import setup
 
-with open('../README.md') as readme_file:
-   readme = readme_file.read()
-
-
 requirements = [
     'mxnet',
     'gluoncv',
-    'Click>=6.0',
     'dlib>=19.7',
     'numpy',
 ]
@@ -19,19 +14,19 @@ test_requirements = [
 ]
 
 setup(
-    name='mobileface_attribute',
+    name='mobileface',
     version='1.0.0',
     description="Recognize faces from Python or from the command line",
-    long_description=readme + '\n\n',
     author="becauseOfAi",
     author_email='noemail@gmail.com',
-    url='https://github.com/becauseofAI/MobileFace/blob/master/MobileFace_Detection/mobilefacedetnet.py',
-    packages=[
-        'MobileFace_Attribute',
-    ],
-    package_dir={'MobileFace_Attribute': ''},
+    url='https://github.com/becauseofAI/MobileFace/',
+
     package_data={
-        'MobileFace_Attribute': ['model/*.*']
+        'MobileFace_Align': ['*.npy'],
+        'MobileFace_Attribute': ['model/*.*'],
+        'MobileFace_Detection': ['model/*.*'],
+        'MobileFace_Identification': ['*.json', '*.params'],
+        'MobileFace_Landmark': ['*.dat'],
     },
     install_requires=requirements,
     license="MIT license",

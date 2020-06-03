@@ -4,7 +4,7 @@ from __future__ import division
 import time
 import mxnet as mx
 from gluoncv.data.transforms import presets
-from mobilefacedetnet import mobilefacedetnet_v1
+from .mobilefacedetnet import mobilefacedetnet_v1
 
 
 class MobileFaceDetection():
